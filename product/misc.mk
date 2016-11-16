@@ -65,11 +65,11 @@ $(call inherit-product, build/target/product/go_defaults.mk)
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=16m \
+    dalvik.vm.heapstartsize=8m \
     dalvik.vm.heapgrowthlimit=192m \
-    dalvik.vm.heapsize=128m \
+    dalvik.vm.heapsize=256m \
     dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=2m \
+    dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
 
 # HWUI
