@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	camera.disable_zsl_mode=1
 
+# Disable camera Treble path
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_treble=true
+
 # Languages
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.product.locale.language=en \
