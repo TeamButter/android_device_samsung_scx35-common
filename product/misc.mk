@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors wrapper
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
     sensors.sc8830
 
 # USB HAL
