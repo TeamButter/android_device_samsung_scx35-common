@@ -23,7 +23,9 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 # Inherit from sprd-common device configuration
 $(call inherit-product, device/samsung/sprd-common/common.mk)
 
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
