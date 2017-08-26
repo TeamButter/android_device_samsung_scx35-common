@@ -25,7 +25,7 @@ on boot
 # bluetooth
     # UART0 device
     chmod 660 /dev/ttyS0
-    chown bluetooth net_bt_stack /dev/ttyS0
+    chown bluetooth bluetooth /dev/ttyS0
 
     chmod 660 /proc/bluetooth/sleep/proto
     chmod 660 /sys/class/rfkill/rfkill0/state
