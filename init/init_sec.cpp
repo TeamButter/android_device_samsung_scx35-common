@@ -33,9 +33,6 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-namespace android {
-namespace init {
-
 std::string bootloader;
 std::string device;
 
@@ -132,7 +129,4 @@ void vendor_load_properties()
 
 	std::string device = android::base::GetProperty("ro.product.device", "");
 	ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader.c_str(), device.c_str());
-}
-
-}
 }
