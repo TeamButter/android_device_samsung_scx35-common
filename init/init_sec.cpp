@@ -123,10 +123,8 @@ void vendor_load_properties()
 		// Close the file after using it
 		fclose(file);
 	} else {
-		// If can't open /proc/simslot_count, print an error!
-		ERROR("Could not open '%s'\n", simslot_count_path);
+		// -_-
 	}
 
 	std::string device = android::base::GetProperty("ro.product.device", "");
-	ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader.c_str(), device.c_str());
 }
