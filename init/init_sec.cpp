@@ -29,10 +29,12 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "vendor_init.h"
+#include <android-base/properties.h>
 #include "property_service.h"
-#include "log.h"
-#include "util.h"
+#include "vendor_init.h"
+
+namespace android {
+namespace init {
 
 std::string bootloader;
 std::string device;
@@ -61,7 +63,7 @@ device_variant match(std::string bl)
 }
 
 device_variant find_device_variant() {
-	bootloader = property_get("ro.bootloader");
+	bootloader = android::base::GetProperty("ro.bootloader", "");
 	return match(bootloader);
 }
 
@@ -128,6 +130,9 @@ void vendor_load_properties()
 		ERROR("Could not open '%s'\n", simslot_count_path);
 	}
 
-	std::string device = property_get("ro.product.device");
+	std::string device = android::base::GetProperty("ro.product.device", "");
 	ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader.c_str(), device.c_str());
+}
+
+}
 }
