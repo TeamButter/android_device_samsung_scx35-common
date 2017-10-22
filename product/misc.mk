@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
 
 # PowerHAL
 PRODUCT_PACKAGES += \
+        android.hardware.power@1.0-impl \  
 	power.sc8830
 
 # Camera config
