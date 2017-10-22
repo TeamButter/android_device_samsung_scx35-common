@@ -9,6 +9,8 @@ PRODUCT_PACKAGES += \
 
 # Camera config
 PRODUCT_PROPERTY_OVERRIDES += \
+        android.hardware.camera.provider@2.4-impl \
+        camera.device@3.2-impl \
 	camera.disable_zsl_mode=1
 
 # Languages
