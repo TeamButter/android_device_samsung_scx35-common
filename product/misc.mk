@@ -18,6 +18,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.product.locale.language=en \
 	ro.product.locale.region=GB
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
 # Disable mobile data on first boot
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.com.android.mobiledata=false
