@@ -8,10 +8,12 @@ PRODUCT_PACKAGES += \
         android.hardware.power@1.0-impl \  
 	power.sc8830
 
+# Camera HIDL
+PRODUCT_PACKAGES += \
+        android.hardware.camera.provider@2.4-impl-legacy \
+
 # Camera config
 PRODUCT_PROPERTY_OVERRIDES += \
-        android.hardware.camera.provider@2.4-impl \
-        camera.device@3.2-impl \
 	camera.disable_zsl_mode=1
 
 # Languages
