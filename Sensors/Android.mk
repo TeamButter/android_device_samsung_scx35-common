@@ -23,7 +23,7 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := sensorswrapper.c
 
-LOCAL_SHARED_LIBRARIES := libcutils libhardware
+LOCAL_SHARED_LIBRARIES := libcutils libhardware liblog
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
