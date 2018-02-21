@@ -12,7 +12,6 @@ PRODUCT_PACKAGES += \
 	modem_control.rc \
 	modemd.rc \
 	nvitemd.rc \
-	p2p_supplicant.rc \
 	phoneserver.rc \
 	refnotify.rc \
 	set_mac.rc \
