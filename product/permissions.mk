@@ -9,4 +9,4 @@ PERMISSIONS_XML_FILES := \
 	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml
 
 PRODUCT_COPY_FILES += \
-	$(foreach f,$(PERMISSIONS_XML_FILES),$(f):system/etc/permissions/$(notdir $(f)))
+	$(foreach f,$(PERMISSIONS_XML_FILES),$(f):$(TARGET_COPY_OUT_VENDOR)/etc/permissions/$(notdir $(f)))
